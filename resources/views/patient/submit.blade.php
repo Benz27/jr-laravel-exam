@@ -46,7 +46,7 @@
                 <option {{ isset($selected) && $selected["coronavirus_status"] == "recovered" ? "selected" : ""}} value="recovered">recovered</option>
                 <option {{ isset($selected) && $selected["coronavirus_status"] == "death" ? "selected" : ""}} value="death">death</option>
             </select>
-            <label for="coronavirus_status">Case Type</label>
+            <label for="coronavirus_status">Coronavirus Status</label>
         </div>
 
 
