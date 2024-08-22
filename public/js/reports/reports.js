@@ -6,7 +6,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     const city_id = parts?.[5] ?? city_select?.value ?? 0;
     const brgys_id = parts?.[6] ?? 0;
     // console.log(city_select.value);
- 
+    // for dynamic fetching. It fetches the baranggays according to city_id
+    // it then populates the select input
     async function getData(city_id) {
         const url = `http://127.0.0.1:8000/api/brgys/by/city/${city_id ?? 0}`;
         console.log(url);
