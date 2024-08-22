@@ -15,7 +15,7 @@
         @foreach ($brgys_list as $brgys)
           <tr>
             <td>{{$brgys["name"]}}</td>
-            <td>{{$brgys["city"]["name"]}}</td>
+            <td>{{$brgys["city"]["name"] ?? "N/A"}}</td>
             <td>
                 <a role="button" style="text-decoration: none;color:black;" href="/brgys/view/{{ $brgys["id"] }}">View</a>
              </td>

@@ -19,7 +19,7 @@
         @foreach ($patients as $patient)
           <tr>
             <td>{{$patient["name"]}}</td>
-            <td>{{$patient["brgys"]["name"]}}</td>
+            <td>{{$patient["brgys"]["name"] ?? "N/A"}}</td>
             <td>{{$patient["number"]}}</td>
             <td>{{$patient["email"]}}</td>
             <td>{{$patient["case_type"]}}</td>

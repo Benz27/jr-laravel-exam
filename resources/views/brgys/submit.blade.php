@@ -14,7 +14,7 @@
         <div class="form-floating mb-3">
             <select required name="city_id" id="city_id" class="form-control">
                 @foreach ($cities as $city)
-                    <option {{ isset($selected) && $selected["city"]["id"] == $city["id"] ? "selected" : ""}} value="{{$city["id"]}}">{{$city["name"]}}</option>
+                    <option {{ isset($selected) && ($selected["city"]["id"] ?? 0) == $city["id"] ? "selected" : ""}} value="{{$city["id"]}}">{{$city["name"]}}</option>
                 @endforeach
             </select>
             <label for="city_id">City</label>
