@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Route;
 
 // root route redirects to patient instead. patient is the main landing page
 // the views uses master.blade.php as the root/parent layout
+// on the email functionalities. I only managed to send via testing or sandbox
 Route::redirect('/', '/patient');
 // The CityController class is where the comments located documenting the flow/behaviors of the controllers.
 // They all behave similarly with others having bit of additional functionalities
