@@ -17,7 +17,7 @@ class CaseStatusUpdate extends Mailable
     /**
      * Create a new message instance.
      */
-    public function __construct(protected Patient $patient)
+    public function __construct(public Patient $patient)
     {
         //
 
